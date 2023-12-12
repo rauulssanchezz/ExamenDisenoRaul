@@ -149,5 +149,9 @@ class Anadir : AppCompatActivity() {
         newintent.putExtra("comentarios",comentarios)
         newintent.putExtra("fecha",fecha)
 
+        startService(intent)
+
+// En un broadcast receiver
+        sendBroadcast(intent)
     }
 }
